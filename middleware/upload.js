@@ -9,6 +9,8 @@ module.exports = (multer({
             cb(null, Date.now().toString() + '_' + file.originalname)
         }
     }),
+
+    
     
     fileFilter: (req, file, cb) => {
         const extensionImg = ['image/png', 'image/jpg', 'image/jpeg'].find
